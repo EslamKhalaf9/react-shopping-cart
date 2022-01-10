@@ -1,7 +1,8 @@
 import "../../css/footer/footer.css";
+import words from "../../words";
 
 const Footer = () => {
-  return <footer>All copyrights reserved &copy;</footer>;
+  return <footer>{words.footerTitle}</footer>;
 };
 
 export default Footer;

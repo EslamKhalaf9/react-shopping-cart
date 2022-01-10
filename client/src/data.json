@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1",
+    "name": "Mobile",
+    "imageUrl": "",
+    "desc": "this is product 1",
+    "price": 30
+  },
+  {
+    "id": "2",
+    "name": "printer",
+    "imageUrl": "",
+    "desc": "this is printer",
+    "price": 30
+  },
+  {
+    "id": "3",
+    "name": "labtop",
+    "imageUrl": "",
+    "desc": "this is labtop",
+    "price": 30
+  },
+  {
+    "id": "4",
+    "name": "headphone",
+    "imageUrl": "",
+    "desc": "this is headphone",
+    "price": 30
+  }
+]
