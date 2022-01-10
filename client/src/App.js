@@ -1,9 +1,11 @@
-import './App.css';
+import Header from "./components/header/Header";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Eslam</h1>
+    <div className='layout'>
+      <Header />
+      <main>this is main</main>
+      <footer>All copyrights reserved &copy;</footer>
     </div>
   );
 }
