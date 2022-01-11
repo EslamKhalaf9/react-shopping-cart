@@ -1,20 +1,33 @@
+import { useState } from "react";
+import Modal from "react-modal";
 import "../../css/products/products.css";
+import Product from "./Product";
 const Products = ({ products }) => {
-  console.log(products);
+  const [product, setProduct] = useState("");
+  const openModal = (product) => {
+    setProduct(product);
+  };
   return (
     <div className='products'>
       {products.map((product) => (
-        <div key={product.id} className='product'>
+        <Product key={product.id} product={product} openModal={openModal} />
+      ))}
+      <Modal isOpen={product} onRequestClose={() => setProduct("")}>
+        <div className='product-modal'>
           <div className='image'>
-            <img src={product.imageUrl} alt='product image' />
+            <img
+              onClick={() => openModal(product)}
+              src={product.imageUrl}
+              alt='product image'
+            />
           </div>
           <div className='info'>
             <p>{product.name}</p>
             <span>${product.price}</span>
+            <p>{product.desc}</p>
           </div>
-          <button>Add to cart</button>
         </div>
-      ))}
+      </Modal>
     </div>
   );
 };
