@@ -2,28 +2,28 @@
   {
     "id": "1",
     "name": "Mobile",
-    "imageUrl": "",
+    "imageUrl": "/imgs/phone.jpg",
     "desc": "this is product 1",
     "price": 30
   },
   {
     "id": "2",
     "name": "printer",
-    "imageUrl": "",
+    "imageUrl": "/imgs/printer.jpg",
     "desc": "this is printer",
     "price": 30
   },
   {
     "id": "3",
     "name": "labtop",
-    "imageUrl": "",
+    "imageUrl": "/imgs/labtop.jpg",
     "desc": "this is labtop",
     "price": 30
   },
   {
     "id": "4",
     "name": "headphone",
-    "imageUrl": "",
+    "imageUrl": "/imgs/headphone.jpg",
     "desc": "this is headphone",
     "price": 30
   }
