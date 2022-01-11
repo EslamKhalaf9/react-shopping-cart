@@ -1,0 +1,27 @@
+.filter {
+  border: 1px solid #ddd;
+  margin: 2rem;
+  .filter-header {
+    background-color: #2f3a8f;
+    padding: 1rem;
+    color: #fff;
+    font-size: x-large;
+    margin-bottom: 1rem;
+  }
+  .filter-body {
+    padding: 1rem;
+    p {
+      font-size: larger;
+      margin: 1rem 0;
+    }
+    > div {
+      display: flex;
+      flex-direction: column;
+      font-size: larger;
+      margin: 1rem 0;
+      span {
+        margin: 0.3rem 0;
+      }
+    }
+  }
+}

@@ -12,13 +12,17 @@ const Products = ({ products }) => {
       {products.map((product) => (
         <Product key={product.id} product={product} openModal={openModal} />
       ))}
-      <Modal isOpen={product} onRequestClose={() => setProduct("")}>
+      <Modal
+        isOpen={product ? true : false}
+        onRequestClose={() => setProduct("")}
+        ariaHideApp={false}
+      >
         <div className='product-modal'>
           <div className='image'>
             <img
               onClick={() => openModal(product)}
               src={product.imageUrl}
-              alt='product image'
+              alt={product.name}
             />
           </div>
           <div className='info'>

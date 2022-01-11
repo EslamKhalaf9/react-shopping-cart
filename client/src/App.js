@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Products from "./components/products/Products";
 import data from "./data.json";
+import Filter from "./components/filter/Filter";
 
 function App() {
-  const [products, setProducts] = useState(data);
+  const [products] = useState(data);
   // useEffect(() => {
   //   setProducts(() => data);
   // }, []);
@@ -16,7 +17,7 @@ function App() {
       <main>
         <div className='wrapper'>
           <Products products={products} />
-          <div className='filter'>filter</div>
+          <Filter />
         </div>
       </main>
       <Footer />

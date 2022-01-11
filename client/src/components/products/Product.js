@@ -5,7 +5,7 @@ function Product({ product, openModal }) {
         <img
           onClick={() => openModal(product)}
           src={product.imageUrl}
-          alt='product image'
+          alt={product.name}
         />
       </div>
       <div className='info'>
